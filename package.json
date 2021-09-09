@@ -1,0 +1,25 @@
+{
+  "name": "pact-example-jest",
+  "version": "1.0.0",
+  "description": "Jest Pact example",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest __tests__/ --runInBand",
+    "pact:publish": "node ./publish.js",
+    "pact:canideploy": "node ./can-i-deploy.js"
+  },
+  "license": "MIT",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "devDependencies": {
+    "@pact-foundation/absolute-version": "0.0.1",
+    "@pact-foundation/pact": "^9.11.1",
+    "@pact-foundation/pact-node": "10.12.1",
+    "axios": "0.21.1",
+    "jest": "26.6.3",
+    "jest-pact": "0.8.3",
+    "faker": "^5.5.3",
+    "uuid": "^8.3.2"
+  }
+}

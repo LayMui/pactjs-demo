@@ -1,0 +1,57 @@
+I, [2021-09-09T16:39:22.073636 #43965]  INFO -- : Registered expected interaction GET /v1/address/
+D, [2021-09-09T16:39:22.073843 #43965] DEBUG -- : {
+  "description": "response.status returns success",
+  "providerState": "get home address",
+  "request": {
+    "method": "GET",
+    "path": "/v1/address/",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "1234567890"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "1234567890"
+    },
+    "body": {
+      "name": "laymui-toh",
+      "address": "blk 4000, farrer road park 12-9999"
+    }
+  },
+  "metadata": null
+}
+I, [2021-09-09T16:39:22.081766 #43965]  INFO -- : Received request GET /v1/address/
+D, [2021-09-09T16:39:22.081881 #43965] DEBUG -- : {
+  "path": "/v1/address/",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Content-Type": "application/json",
+    "Accept": "application/json, text/plain, */*",
+    "X-Api-Key": "1234567890",
+    "User-Agent": "axios/0.21.1",
+    "Host": "127.0.0.1:49671",
+    "Connection": "close",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2021-09-09T16:39:22.082245 #43965]  INFO -- : Found matching response for GET /v1/address/
+D, [2021-09-09T16:39:22.082353 #43965] DEBUG -- : {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json",
+    "x-api-key": "1234567890"
+  },
+  "body": {
+    "name": "laymui-toh",
+    "address": "blk 4000, farrer road park 12-9999"
+  }
+}
+I, [2021-09-09T16:39:22.089800 #43965]  INFO -- : Verifying - interactions matched
+I, [2021-09-09T16:39:22.091905 #43965]  INFO -- : Verifying - interactions matched
+I, [2021-09-09T16:39:22.094261 #43965]  INFO -- : Cleared interactions
+I, [2021-09-09T16:39:22.096757 #43965]  INFO -- : Cleared interactions
+I, [2021-09-09T16:39:22.099550 #43965]  INFO -- : Updating pact for iProvider at /Users/a845751yara.com/poc/pactjs-demo/pact/pacts/iconsumer-iprovider.json
