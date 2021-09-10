@@ -39,3 +39,5 @@ curl -X 'GET' \
 
 Note for using matcher for size: like(1.0)
 Also note, because JS, 1.0 gets converted to 1 and becomes an integer match.
+
+reference: https://github.com/pact-foundation/pact-js#match-common-formats
