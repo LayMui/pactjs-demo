@@ -30,10 +30,10 @@
         },
         "body": {
           "locationId": "ca2bd511-1234b",
-          "myUserId": "e87c8d19-607b-4dc8-b15f-7ea67a188332",
+          "myUserId": "c1d975d1-94fc-4501-a82c-5cfa7437608c",
           "name": "my garden",
           "type": "SUNFLOWER",
-          "size": 0.1,
+          "size": 1.1,
           "unit": [
             "acre",
             "hectare"
@@ -46,6 +46,9 @@
         },
         "matchingRules": {
           "$.headers.x-api-key": {
+            "match": "type"
+          },
+          "$.body.size": {
             "match": "type"
           }
         }

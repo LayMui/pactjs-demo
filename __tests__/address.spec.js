@@ -1,5 +1,5 @@
 const { Pact } = require('@pact-foundation/pact');
-const { like } = require('@pact-foundation/pact').Matchers;
+const { Matchers, like } = require('@pact-foundation/pact').Matchers;
 const { pactWith } = require('jest-pact');
 const axios = require('axios');
 const uuid = require("uuid");
@@ -19,7 +19,7 @@ pactWith(
          myUserId: uuid.v4(),
          name: 'my garden',
          type: 'SUNFLOWER',
-         size: 0.1,
+         size: like(1.1),
          unit: ['acre', 'hectare'],
          latitude: -51.470544,
          longitude: -2.588658,

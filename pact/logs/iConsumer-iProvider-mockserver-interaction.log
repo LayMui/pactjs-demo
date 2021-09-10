@@ -1,5 +1,5 @@
-I, [2021-09-10T11:32:33.468204 #58551]  INFO -- : Registered expected interaction GET /v1/address/locations9412-4f2c-8db7-9bd5b46ca9b0
-D, [2021-09-10T11:32:33.468454 #58551] DEBUG -- : {
+I, [2021-09-10T17:02:08.868188 #88875]  INFO -- : Registered expected interaction GET /v1/address/locations9412-4f2c-8db7-9bd5b46ca9b0
+D, [2021-09-10T17:02:08.868786 #88875] DEBUG -- : {
   "description": "response.status returns locationID",
   "providerState": "get address details",
   "request": {
@@ -24,10 +24,13 @@ D, [2021-09-10T11:32:33.468454 #58551] DEBUG -- : {
     },
     "body": {
       "locationId": "ca2bd511-1234b",
-      "myUserId": "e87c8d19-607b-4dc8-b15f-7ea67a188332",
+      "myUserId": "c1d975d1-94fc-4501-a82c-5cfa7437608c",
       "name": "my garden",
       "type": "SUNFLOWER",
-      "size": 0.1,
+      "size": {
+        "json_class": "Pact::SomethingLike",
+        "contents": 1.1
+      },
       "unit": [
         "acre",
         "hectare"
@@ -41,8 +44,8 @@ D, [2021-09-10T11:32:33.468454 #58551] DEBUG -- : {
   },
   "metadata": null
 }
-I, [2021-09-10T11:32:33.476674 #58551]  INFO -- : Received request GET /v1/address/locations9412-4f2c-8db7-9bd5b46ca9b0
-D, [2021-09-10T11:32:33.476790 #58551] DEBUG -- : {
+I, [2021-09-10T17:02:08.875913 #88875]  INFO -- : Received request GET /v1/address/locations9412-4f2c-8db7-9bd5b46ca9b0
+D, [2021-09-10T17:02:08.876006 #88875] DEBUG -- : {
   "path": "/v1/address/locations9412-4f2c-8db7-9bd5b46ca9b0",
   "query": "",
   "method": "get",
@@ -51,13 +54,13 @@ D, [2021-09-10T11:32:33.476790 #58551] DEBUG -- : {
     "Accept": "application/json, text/plain, */*",
     "X-Api-Key": "[object Object]",
     "User-Agent": "axios/0.21.1",
-    "Host": "127.0.0.1:53982",
+    "Host": "127.0.0.1:60201",
     "Connection": "close",
     "Version": "HTTP/1.1"
   }
 }
-I, [2021-09-10T11:32:33.477769 #58551]  INFO -- : Found matching response for GET /v1/address/locations9412-4f2c-8db7-9bd5b46ca9b0
-D, [2021-09-10T11:32:33.477923 #58551] DEBUG -- : {
+I, [2021-09-10T17:02:08.876304 #88875]  INFO -- : Found matching response for GET /v1/address/locations9412-4f2c-8db7-9bd5b46ca9b0
+D, [2021-09-10T17:02:08.876391 #88875] DEBUG -- : {
   "status": 200,
   "headers": {
     "Content-Type": "application/json",
@@ -68,10 +71,13 @@ D, [2021-09-10T11:32:33.477923 #58551] DEBUG -- : {
   },
   "body": {
     "locationId": "ca2bd511-1234b",
-    "myUserId": "e87c8d19-607b-4dc8-b15f-7ea67a188332",
+    "myUserId": "c1d975d1-94fc-4501-a82c-5cfa7437608c",
     "name": "my garden",
     "type": "SUNFLOWER",
-    "size": 0.1,
+    "size": {
+      "json_class": "Pact::SomethingLike",
+      "contents": 1.1
+    },
     "unit": [
       "acre",
       "hectare"
@@ -83,8 +89,11 @@ D, [2021-09-10T11:32:33.477923 #58551] DEBUG -- : {
     "address": "Blk 4000, farrer park, singapore"
   }
 }
-I, [2021-09-10T11:32:33.485140 #58551]  INFO -- : Verifying - interactions matched
-I, [2021-09-10T11:32:33.486305 #58551]  INFO -- : Verifying - interactions matched
-I, [2021-09-10T11:32:33.492006 #58551]  INFO -- : Cleared interactions
-I, [2021-09-10T11:32:33.493459 #58551]  INFO -- : Cleared interactions
-I, [2021-09-10T11:32:33.526368 #58551]  INFO -- : Updating pact for iProvider at /Users/a845751yara.com/poc/pactjs-demo/pact/pacts/iconsumer-iprovider.json
+I, [2021-09-10T17:02:08.910277 #88875]  INFO -- : Verifying - interactions matched
+I, [2021-09-10T17:02:08.913668 #88875]  INFO -- : Cleared interactions
+I, [2021-09-10T17:02:08.918209 #88875]  INFO -- : Updating pact for iProvider at /Users/laymui/dev/taiger/pactjs-demo/pact/pacts/iconsumer-iprovider.json
+I, [2021-09-10T17:02:08.918951 #88875]  INFO -- : *****************************************************************************
+I, [2021-09-10T17:02:08.919070 #88875]  INFO -- : Updating existing file ./Users/laymui/dev/taiger/pactjs-demo/pact/pacts/iconsumer-iprovider.json as pactfile_write_mode is :update
+I, [2021-09-10T17:02:08.919095 #88875]  INFO -- : Only interactions defined in this test run will be updated.
+I, [2021-09-10T17:02:08.919114 #88875]  INFO -- : As interactions are identified by description and provider state, pleased note that if either of these have changed, the old interactions won't be removed from the pact file until the specs are next run with :pactfile_write_mode => :overwrite.
+I, [2021-09-10T17:02:08.919134 #88875]  INFO -- : *****************************************************************************

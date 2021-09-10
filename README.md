@@ -36,3 +36,6 @@ curl -X 'GET' \
 "latitude":13.741655670568623,"longitude":100.56231563692762,"country":"Singapore",
 "dependent":null,
 "address":"blk 40000 farrer road 12345",              
+
+Note for using matcher for size: like(1.0)
+Also note, because JS, 1.0 gets converted to 1 and becomes an integer match.
