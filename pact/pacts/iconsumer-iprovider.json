@@ -7,25 +7,47 @@
   },
   "interactions": [
     {
-      "description": "response.status returns success",
-      "providerState": "get home address",
+      "description": "response.status returns locationID",
+      "providerState": "get address details",
       "request": {
         "method": "GET",
-        "path": "/v1/address/",
+        "path": "/v1/address/locations9412-4f2c-8db7-9bd5b46ca9b0",
         "headers": {
           "Content-Type": "application/json",
-          "x-api-key": "1234567890"
+          "x-api-key": "30a8-4601-b7f9-6fdd3b25c950"
+        },
+        "matchingRules": {
+          "$.headers.x-api-key": {
+            "match": "type"
+          }
         }
       },
       "response": {
         "status": 200,
         "headers": {
           "Content-Type": "application/json",
-          "x-api-key": "1234567890"
+          "x-api-key": "30a8-4601-b7f9-6fdd3b25c950"
         },
         "body": {
-          "name": "laymui-toh",
-          "address": "blk 4000, farrer road park 12-9999"
+          "locationId": "ca2bd511-1234b",
+          "myUserId": "e87c8d19-607b-4dc8-b15f-7ea67a188332",
+          "name": "my garden",
+          "type": "SUNFLOWER",
+          "size": 0.1,
+          "unit": [
+            "acre",
+            "hectare"
+          ],
+          "latitude": -51.470544,
+          "longitude": -2.588658,
+          "country": "Singapore",
+          "dependent": "Malaysia",
+          "address": "Blk 4000, farrer park, singapore"
+        },
+        "matchingRules": {
+          "$.headers.x-api-key": {
+            "match": "type"
+          }
         }
       }
     }
