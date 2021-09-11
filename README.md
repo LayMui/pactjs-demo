@@ -19,25 +19,28 @@ How does my API looks like?
 here is the curl command
 ```
 curl -X 'GET' \
-  'https://address-service.laymui.io/v1/address/locations/abc’ \
+  'https://address-service.laymui.io/v1/address/locations’ \
   -H 'accept: application/json' \
   -H 'x-api-key: 1234-3456-6655
   ```
 
   and the response payload:
   ```
-{"status":"SUCCESS",
-"errors":{},
-"data":
-{"locationId”:”1234-45666-333,”myUserId”:”123342-23232,”name":"My garden",
-"type":"sunflower",
-"size":"0.1",
-"unit":"acre",
-"latitude":13.741655670568623,"longitude":100.56231563692762,"country":"Singapore",
-"dependent":null,
-"address":"blk 40000 farrer road 12345",              
-
+{
+  "locationId”:”1234-45666-333,
+  ”name":"My garden",
+  "type":"sunflower",
+  "size":"0.1",
+  "unit":"acre",
+  "country":"Singapore",
+  "address":"blk 40000 farrer road 12345",              
+}
 Note for using matcher for size: like(1.0)
 Also note, because JS, 1.0 gets converted to 1 and becomes an integer match.
 
 reference: https://github.com/pact-foundation/pact-js#match-common-formats
+
+## Todo list
+1.use Express to set up the application to run the provider test
+
+2.add to circleCI

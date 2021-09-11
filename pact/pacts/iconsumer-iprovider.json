@@ -11,7 +11,7 @@
       "providerState": "get address details",
       "request": {
         "method": "GET",
-        "path": "/v1/address/locations9412-4f2c-8db7-9bd5b46ca9b0",
+        "path": "/v1/address/locations",
         "headers": {
           "Content-Type": "application/json",
           "x-api-key": "30a8-4601-b7f9-6fdd3b25c950"
@@ -29,19 +29,14 @@
           "x-api-key": "30a8-4601-b7f9-6fdd3b25c950"
         },
         "body": {
-          "locationId": "ca2bd511-1234b",
-          "myUserId": "c1d975d1-94fc-4501-a82c-5cfa7437608c",
+          "locationId": 123,
           "name": "my garden",
-          "type": "SUNFLOWER",
           "size": 1.1,
           "unit": [
             "acre",
             "hectare"
           ],
-          "latitude": -51.470544,
-          "longitude": -2.588658,
           "country": "Singapore",
-          "dependent": "Malaysia",
           "address": "Blk 4000, farrer park, singapore"
         },
         "matchingRules": {

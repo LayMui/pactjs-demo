@@ -1,0 +1,18 @@
+[
+    {
+        "locationId": 123,
+         "name": "my tabernacles",
+         "size": 2000,
+         "unit": "acre",
+         "country": "Australia",
+         "address": "Blk 4000, fajar road"
+    },
+    {
+        "locationId": 124,
+         "name": "my balcony",
+         "size": 200,
+         "unit": "acre",
+         "country": "Indonesia",
+         "address": "1, orchard"
+    }
+]

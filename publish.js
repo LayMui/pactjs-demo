@@ -5,7 +5,8 @@ let path = require("path")
 let opts = {
   providerBaseUrl: "http://localhost:8080",
   pactFilesOrDirs: [path.resolve(process.cwd(), "pact", "pacts")],
-  pactBroker: "http://localhost:9292",
+  pactBroker: process.env.PACTBROKERURL,
+  pactBrokerToken: process.env.PACTBROKERTOKEN,
   consumerVersion: "0.0.3",
 }
 
