@@ -40,7 +40,14 @@ Also note, because JS, 1.0 gets converted to 1 and becomes an integer match.
 
 reference: https://github.com/pact-foundation/pact-js#match-common-formats
 
-## Todo list
-1.use Express to set up the application to run the provider test
+## use Express to set up the application to run the provider test
+Setup a route and return static data
+
+1. npm install express
+npm i body-parser
+2. Accessing the server and returning data
+The server should be running by now, and you can visit http://localhost:3000 to see it in action.
+
+By default, it doesn't return a great deal, but if you visit http://localhost:3001/users -- which will automatically issue a GET request to our running API server -- you'll see a simple JSON object populated with some dummy user data.
 
 2.add to circleCI
