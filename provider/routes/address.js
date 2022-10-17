@@ -1,7 +1,7 @@
 const addressRoutes = (app, fs) => {
 
     // variables
-    const dataPath = './data/address.json';
+    const dataPath = './provider/data/address.json';
 
     // helper methods
     const readFile = (callback, returnJson = false, filePath = dataPath, encoding = 'utf8') => {

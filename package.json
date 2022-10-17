@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest __tests__/ --runInBand",
     "pact:publish": "node ./publish.js",
-    "verify:pact": "PACT_PUBLISH_RESULTS=true npx jest --testTimeout=15000 --detectOpenHandles --testMatch \"**/verify.pact.js\"",
+    "verify:pact": "PACT_PUBLISH_RESULTS=true npx jest --testTimeout=30000 --detectOpenHandles --testMatch \"**/verify.pact.js\"",
     "pact:canideploy": "node ./can-i-deploy.js"
   },
   "license": "MIT",
